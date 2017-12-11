@@ -2,11 +2,17 @@
 
 {% block content %}
     {% load static %}
+    
+    <title>Sign Up</title>
+    
     <link rel="stylesheet" type="text/css" href="{% static 'signup.css' %}"/>
 
     <div class="signup-container" align="center">
 
         <form method="post" class="signup"> {% csrf_token %}
+            
+            <h2 class="sign">Sign Up</h2>
+            
             <div>
                 <label for="id_username"></label>
                 <input type="text" name="email" placeholder="Email address" autofocus required
