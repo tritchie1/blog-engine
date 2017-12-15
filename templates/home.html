@@ -7,6 +7,7 @@
     <title>Home</title>
     <div class="post-container">
     {% for post in posts %}
+        <a href="/post/{{post.id}}" class="post-link">
         <div class="post">
             <div class="post__title">{{post.title}} - {{post.user}}</div>
             
@@ -15,7 +16,7 @@
             </div>
             {{ post.content }}        
         </div>
-
+            </a>
     {% endfor%}
         </div>
 {% endblock %}
